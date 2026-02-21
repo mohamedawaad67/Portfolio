@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Awaad | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #010816; color: #e2e8f0; }
+        .glass { background: rgba(2, 12, 27, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .cyan-glow { box-shadow: 0 0 20px rgba(6, 182, 212, 0.15); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #010816; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #334155; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Background Decoration -->
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-cyan-500/5 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/5 blur-[120px] rounded-full"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 py-4 glass border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-1 text-cyan-500 font-bold text-xl">
+                <span class="text-white/30">&lt;</span> Dev <span class="text-white">.</span> <span class="text-white/30">&gt;</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-400">
+                <a href="#home" class="hover:text-cyan-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#education" class="hover:text-cyan-400 transition-colors">Education</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-44 pb-24 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+        <div class="flex-1">
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-4 tracking-tighter leading-none">
+                <span class="text-cyan-500">Mohamed</span> <br/>
+                <span class="text-blue-400">Awaad</span>
+            </h1>
+            <div class="inline-flex items-center gap-3 bg-cyan-500/10 border-l-4 border-cyan-500 px-5 py-2.5 mb-8 rounded-r-lg">
+                <i data-lucide="terminal" class="text-cyan-500 w-5 h-5"></i>
+                <span class="text-sm font-bold text-slate-200 tracking-wide uppercase">Junior Full Stack .NET Web Developer</span>
+            </div>
+            <p class="text-lg text-slate-400 mb-10 max-w-lg leading-relaxed font-light">
+                Building scalable, data-driven web solutions with clean architecture and modern backend technologies.
+            </p>
+            <div class="flex flex-wrap items-center gap-6">
+                <a href="#projects" class="bg-cyan-500 text-white px-8 py-3.5 rounded-xl font-bold text-sm flex items-center gap-3 hover:bg-cyan-600 transition-all transform hover:-translate-y-1">
+                    See My Work <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <div class="flex gap-6">
+                    <a href="https://github.com/mohamedawaad67" class="text-slate-400 hover:text-white transition-colors"><i data-lucide="github"></i></a>
+                    <a href="https://www.linkedin.com/in/mohamed-awaad-297185295" class="text-slate-400 hover:text-white transition-colors"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full max-w-[500px]">
+            <div class="glass p-8 rounded-3xl font-mono text-sm border border-white/10 shadow-2xl relative overflow-hidden">
+                <div class="flex gap-2 mb-6">
+                    <div class="w-3 h-3 rounded-full bg-red-500/70"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500/70"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500/70"></div>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-blue-400">public class <span class="text-cyan-400">Developer</span> {</p>
+                    <p class="pl-6 text-slate-300">string Name = <span class="text-amber-300">"Mohamed"</span>;</p>
+                    <p class="pl-6 text-slate-300">string Focus = <span class="text-amber-300">".NET & C#"</span>;</p>
+                    <p class="pl-6 text-blue-400">public void <span class="text-cyan-400">Build</span>() {</p>
+                    <p class="pl-12 text-slate-500 italic">// creating magic...</p>
+                    <p class="pl-6 text-blue-400">}</p>
+                    <p class="text-blue-400">}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-24 border-t border-white/5 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-start">
+            <div class="md:w-1/3">
+                <h2 class="text-4xl font-extrabold flex items-center gap-4">
+                    <i data-lucide="sparkles" class="text-cyan-500 w-10 h-10"></i> About Me
+                </h2>
+                <div class="h-1.5 w-14 bg-cyan-500 mt-4 rounded-full"></div>
+            </div>
+            <div class="md:w-2/3 text-xl text-slate-400 leading-relaxed font-light">
+                <p class="mb-6">
+                    I am a backend developer focused on <span class="text-white font-semibold">.NET and C#</span>. I enjoy building APIs, working with databases, and creating structured and efficient backend systems.
+                </p>
+                <p>
+                    I am passionate about learning, improving my skills, and becoming a professional backend engineer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-24 border-t border-white/5 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-extrabold mb-16 flex items-center gap-4">
+                <i data-lucide="graduation-cap" class="text-cyan-500 w-10 h-10"></i> Education
+            </h2>
+            <div class="relative pl-10 border-l-2 border-slate-800">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)]"></div>
+                <div class="glass p-10 rounded-2xl hover:border-cyan-500/30 transition-all">
+                    <div class="flex flex-col md:flex-row justify-between mb-4 items-baseline">
+                        <h3 class="text-2xl font-bold text-white">Bachelor's Degree in Computer Science</h3>
+                        <span class="text-cyan-500 font-mono text-xs font-bold bg-cyan-500/10 px-3 py-1 rounded-full uppercase">2023 — 2027 (Expected)</span>
+                    </div>
+                    <p class="text-xl text-slate-300 mb-2">Tanta University</p>
+                    <p class="text-slate-500 mb-6">Department of Computer Science</p>
+                    <div class="h-px w-full bg-white/5 my-6"></div>
+                    <p class="text-slate-400 italic">Focusing on advanced algorithms, data structures, and software engineering principles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="py-24 border-t border-white/5 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-extrabold mb-12">Achievements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-2xl flex items-center gap-6 group hover:border-cyan-500/50 transition-all cursor-default">
+                    <div class="p-4 bg-cyan-500/10 rounded-xl text-cyan-500 group-hover:bg-cyan-500 group-hover:text-white transition-all"><i data-lucide="award"></i></div>
+                    <div>
+                        <h4 class="text-xl font-bold">DEPI Initiative</h4>
+                        <p class="text-slate-500">Full Stack .NET Track</p>
+                    </div>
+                </div>
+                <div class="glass p-8 rounded-2xl flex items-center gap-6 group hover:border-cyan-500/50 transition-all cursor-default">
+                    <div class="p-4 bg-cyan-500/10 rounded-xl text-cyan-500 group-hover:bg-cyan-500 group-hover:text-white transition-all"><i data-lucide="award"></i></div>
+                    <div>
+                        <h4 class="text-xl font-bold">Route Academy</h4>
+                        <p class="text-slate-500">Computer Science Basics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24 bg-slate-900/20 border-t border-white/5 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-center text-4xl font-extrabold mb-20 uppercase tracking-[0.2em]">Technical Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Skill Group -->
+                <div class="glass p-8 rounded-3xl border border-white/5 hover:-translate-y-2 transition-transform">
+                    <i data-lucide="server" class="text-cyan-500 mb-6 w-8 h-8"></i>
+                    <h3 class="text-lg font-bold mb-6 text-white uppercase tracking-widest border-b border-white/5 pb-2">Backend</h3>
+                    <ul class="space-y-3 text-slate-500 font-medium">
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> C#</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> ASP.NET Core</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> Web API</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> MVC / EF Core</li>
+                    </ul>
+                </div>
+                <!-- Skill Group -->
+                <div class="glass p-8 rounded-3xl border border-white/5 hover:-translate-y-2 transition-transform">
+                    <i data-lucide="globe" class="text-cyan-500 mb-6 w-8 h-8"></i>
+                    <h3 class="text-lg font-bold mb-6 text-white uppercase tracking-widest border-b border-white/5 pb-2">Frontend</h3>
+                    <ul class="space-y-3 text-slate-500 font-medium">
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> HTML5 / CSS3</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> JavaScript</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> Razor Views</li>
+                    </ul>
+                </div>
+                <!-- Skill Group -->
+                <div class="glass p-8 rounded-3xl border border-white/5 hover:-translate-y-2 transition-transform">
+                    <i data-lucide="database" class="text-cyan-500 mb-6 w-8 h-8"></i>
+                    <h3 class="text-lg font-bold mb-6 text-white uppercase tracking-widest border-b border-white/5 pb-2">Databases</h3>
+                    <ul class="space-y-3 text-slate-500 font-medium">
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> SQL Server</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> DB Design</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> CRUD Logic</li>
+                    </ul>
+                </div>
+                <!-- Skill Group -->
+                <div class="glass p-8 rounded-3xl border border-white/5 hover:-translate-y-2 transition-transform">
+                    <i data-lucide="wrench" class="text-cyan-500 mb-6 w-8 h-8"></i>
+                    <h3 class="text-lg font-bold mb-6 text-white uppercase tracking-widest border-b border-white/5 pb-2">Tools</h3>
+                    <ul class="space-y-3 text-slate-500 font-medium">
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> Git / GitHub</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> Agile / Jira</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></span> Unit Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="py-24 border-t border-white/5 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-16 tracking-tighter">Let's <span class="text-cyan-500">Connect</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                <a href="mailto:mohamedawaad2@gmail.com" class="glass p-8 rounded-2xl hover:bg-white/5 transition-colors flex flex-col items-center gap-4">
+                    <i data-lucide="mail" class="text-cyan-500"></i>
+                    <span class="font-bold text-sm">Email</span>
+                    <p class="text-xs text-slate-500">mohamedawaad2@gmail.com</p>
+                </a>
+                <a href="https://wa.me/201017710568" target="_blank" class="glass p-8 rounded-2xl hover:bg-white/5 transition-colors flex flex-col items-center gap-4">
+                    <i data-lucide="message-circle" class="text-cyan-500"></i>
+                    <span class="font-bold text-sm">WhatsApp</span>
+                    <p class="text-xs text-slate-500">+201017710568</p>
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-awaad-297185295" target="_blank" class="glass p-8 rounded-2xl hover:bg-white/5 transition-colors flex flex-col items-center gap-4">
+                    <i data-lucide="linkedin" class="text-cyan-500"></i>
+                    <span class="font-bold text-sm">LinkedIn</span>
+                    <p class="text-xs text-slate-500">Professional Profile</p>
+                </a>
+                <a href="https://github.com/mohamedawaad67" target="_blank" class="glass p-8 rounded-2xl hover:bg-white/5 transition-colors flex flex-col items-center gap-4">
+                    <i data-lucide="github" class="text-cyan-500"></i>
+                    <span class="font-bold text-sm">GitHub</span>
+                    <p class="text-xs text-slate-500">Source Code</p>
+                </a>
+            </div>
+            <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold uppercase tracking-widest text-slate-600">
+                <p>© 2026 Mohamed Awaad</p>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="map-pin" class="w-3 h-3 text-cyan-500"></i>
+                    <span>Tanta, Egypt</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Smooth Scroll Logic
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
