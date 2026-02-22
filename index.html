@@ -205,15 +205,49 @@
         </div>
     </section>
 
+    <!-- Projects -->
+    <section id="projects" class="py-24 border-t border-white/5 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-extrabold mb-16 flex items-center gap-4">
+                <i data-lucide="folder-open" class="text-cyan-500 w-10 h-10"></i> Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- MovieApp Project -->
+                <a href="https://mohamedawaad67.github.io/Movie_01/" target="_blank" class="glass p-8 rounded-3xl border border-white/5 hover:border-cyan-500/30 hover:-translate-y-2 transition-all group cursor-pointer block">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="p-3 bg-cyan-500/10 rounded-xl text-cyan-500 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                            <i data-lucide="film" class="w-6 h-6"></i>
+                        </div>
+                        <span class="flex items-center gap-2 text-xs font-bold text-slate-500 group-hover:text-cyan-400 transition-colors uppercase tracking-widest">
+                            Live Demo <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">MovieApp</h3>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        A web application for browsing movies — explore trending titles, add favorites to a Wishlist, and search for any movie with ease.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-bold bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full">HTML / CSS</span>
+                        <span class="text-xs font-bold bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full">JavaScript</span>
+                        <span class="text-xs font-bold bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full">Tailwind CSS</span>
+                        <span class="text-xs font-bold bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full">TMDB API</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
     <footer id="contact" class="py-24 border-t border-white/5 px-6">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-5xl md:text-7xl font-extrabold mb-16 tracking-tighter">Let's <span class="text-cyan-500">Connect</span></h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-                <a href="mailto:mohamedawaad2@gmail.com" class="glass p-8 rounded-2xl hover:bg-white/5 transition-colors flex flex-col items-center gap-4">
+                <a href="/cdn-cgi/l/email-protection#2d4042454c4048494c5a4c4c491f6d4a404c4441034e4240" class="glass p-8 rounded-2xl hover:bg-white/5 transition-colors flex flex-col items-center gap-4">
                     <i data-lucide="mail" class="text-cyan-500"></i>
                     <span class="font-bold text-sm">Email</span>
-                    <p class="text-xs text-slate-500">mohamedawaad2@gmail.com</p>
+                    <p class="text-xs text-slate-500"><span class="__cf_email__" data-cfemail="0c6163646d6169686d7b6d6d683e4c6b616d6560226f6361">[email&#160;protected]</span></p>
                 </a>
                 <a href="https://wa.me/201017710568" target="_blank" class="glass p-8 rounded-2xl hover:bg-white/5 transition-colors flex flex-col items-center gap-4">
                     <i data-lucide="message-circle" class="text-cyan-500"></i>
@@ -241,19 +275,10 @@
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Initialize Lucide Icons
         lucide.createIcons();
 
         // Smooth Scroll Logic
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+            anchor.addEventListener('click', 
